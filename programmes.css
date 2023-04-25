@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding:  0;
+    text-decoration:none;
+    box-sizing: border-box; 
+    list-style:  none;
+
+
+}
+
+/********************************************************************************    HEADER    ******************************************************************************************************** */
+
+
+section {
+    padding: 50px 10%;
+}
+header  {
+    width: 100%;
+    /* z-index: 1000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 10%;
+    margin:0;
+    height: 200px;
+
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+  position: relative;
+  top: 20px;
+  height: 320px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+} 
+
+.navbar  {
+    display:flex;
+}
+
+.navbar a{
+    padding-top: 11px;
+    padding-bottom:  11px;
+    padding-left: 25px;
+    padding-right:  25px;
+    color: #1e3932;
+    font-size: 18px;
+   
+}
+.navbar  a:hover{
+    color:#FF9800;
+}
+
+#menu-icon {
+    font-size:30px;
+    cursor:pointer;
+    z-index:  1001;
+    display:none;
+
+}
+
+
+/****************************************************************************************  FIN HEADER  ****************************************************************************************** */
+/****************************************************************************************  DEBUT IMAGE ACCUEIL ***********************************************************************************/
+.Accueil {
+ 
+    display:   flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #1e4d79;
+    gap: 10px;
+    height: 700px;
+
+}
+.text-accueil  {
+    position: relative;
+    top:  -0px;
+}
+.accueil-img  {
+    position: relative;
+    top :  0px;
+    left:  500px;
+}
+
+.text-accueil p {
+    font-size: 18px;
+}
+
+.text-accueil  h1 {
+    font-size: 50px;
+    color:  #34910d;
+    font-weight: bolder;
+}
+    
+.text-accueil h2 {
+    position:relative;
+    top: 0px;
+    font-size: 25px;
+    color:   #ffce5f;
+    width: 300px;
+ 
+}
+
+/* ************************************************************************************* FIN IMAGE ACCUEIL  ************************************************************************************* */
+
+.titres-produits {
+    position:relative;
+    left : 500px;
+    font-size: 25px;
+}
+/* ************************************************************************************* DEBUT A propos ************************************************************************************ */
+
+.titres-about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titres-about  h1 {
+    font-size:  40px;
+    color: #83cd2d;
+}
+.about {
+    /* display:flex;
+    flex-direction: column; */
+    background: #1e4d79;
+    gap: 30px;
+}
+
+.about-img  {
+    position: relative;
+    left: 70px;
+    top: 0px;
+    width: 500px;
+   
+
+}
+.about-text {
+    position: relative;
+    top: 0px;
+    width: 500px;
+    left:  200px;
+    height: 200px;
+
+}
+
+
+.about-text  p  {
+    margin-bottom: 10px;
+    margin-right:  10px;
+    margin-bottom:  10px;
+    color: #ffce5f;
+}
+.about-img  img{
+    height:350px;
+    width: 450px;
+}
+
+/************************************************************************************** FIN a propos  ************************************************************************************* */
+/************************************************************************************** SOCIAL  FOOTER ************************************************************************************ */
+
+.contact  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.social a  .bx {
+    padding: 5px;
+    color: #fff;
+    gap: 30px;;
+    background:  #1e3932;
+    border-radius:  50%;
+
+}
+
+.social a .bx:hover {
+    background:  #e7ac23;
+}
+
+.links a  {
+    position: relative;
+    bottom: -20px;
+    font-size: 20px;
+    padding :  10px;
+    padding-top: 20px;
+    gap:20px;
+    color:#1e3932;
+}
+
+/************************************************************************************** BUTTON TOP ************************************************************************************ */
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    /* visibility: hidden; */
+    /* z-index: 1000; */
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  .content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #button {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+  }
+
+
+
+
+  .fcc-btn {
+    background-color: #83cd2d;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  
+  .fcc-btn:hover {
+    background-color: #ffce5f;}
+
+
+    .fcc-btn2 {
+        background-color:  #83cd2d;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+      }
+      
+      .fcc-btn2:hover {
+        background-color: #ffce5f;
+      }
+
+
+.imgmodules {
+  width: 300px;
+  height: 200px;
+}
+
+
+.imgmodules1 {
+  width: 300px;
+  height: 200px;
+  left: -150px;
+  position: relative;
+}
+
+
+ .imgmodules2 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left : -100px;
+}
+
+
+ .imgmodules3 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left  : -50px;
+}
+
+
+.imgmodules4 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left  : 0px;
+}
+
+
+.imgmodules5 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left  : 50px;
+} 
+
+.t1 {
+  position:absolute;
+  top : 460px;
+  left : 130px;
+  color: white;
+
+}
+
+.t2 {
+  position:absolute;
+  top : 210px;
+  left : 480px;
+  color: white;
+}
+
+.t3 {
+  position:absolute;
+  top : 210px;
+  left : 830px;
+  color: white;
+}
+
+.t4 {
+  position:absolute;
+  top : 210px;
+  left : 1180px;
+  color: white;
+}
+
+.t5 {
+  position:absolute;
+  top : 210px;
+  left : 1530px;
+  color: white;
+}

@@ -11,10 +11,10 @@
     
 </head>
 <body>
-   
+<script src="main.js"></script>
 <!--------------------------------------------------------------  Nav --------------------------------------------------------------------------------------------------->
 <header>
-    <a href="index.php"><img class="logo" src="images/logo2.png"></a>
+    <a href="Index.html"><img class="logo" src="images/Kidzventures3.png"></a>
     <div class="bx bx-menu"  id="menu-icon"></div>
 <nav>
     <ul class="navbar">
@@ -32,12 +32,69 @@
 <section class="Accueil" id="accueil">
     <div class="text-accueil">
         <h2>Libérez la créativité de votre enfant et développez sa capacité à travailler en équipe pour donner vie à ses idées les plus audacieuses, grâce à nos programmes stimulant et ludique.</h2>
-        <!-- <a href="#" class="button">Rejoignez nous</a> -->
-    </div>
-<div class="accueil-img">
-    <img src="images/photoaccueil3.jpg">
-</div>
+       
+   
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/4.webp" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
 </section>
+<!-- <div class="accueil-img">
+    <img class="photoaccueil" src="images/photo.jpg">
+</div> -->
+<!------------DEBUT CARROUSSEL-->
+
+
+
 <!-------------------------------------------------------------------Fin Img Accueil ---------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------Nos produits ------------------------------------------------------------------------------------------------->
 <section class="produits" id="produits">
@@ -53,7 +110,7 @@
 
 <section class="about" id="about">
 <div class="about-img">
-        <img src="images/Entrepreneur-kid.jpg">
+        <img class="entrepreneurkid"  src="images/Entrepreneur-kid.jpg">
     </div>
     <div class="about-text">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nulla, quis fugiat dignissimos obcaecati consectetur, laboriosam saepe iusto nam consequatur dolorum beatae? Ad repellat dolorem laborum eligendi esse? Quae, doloribus?</p>
@@ -77,7 +134,7 @@
         <a href="#">Politique de confidentialité</a>
     </div>
 </section>
+
 </footer>
-<script src="main.js"></script>
 </body>
 </html>
